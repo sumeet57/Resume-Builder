@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { NavLink, Link } from "react-router-dom";
 import "../components/responsive.css";
+
 function Home() {
   return (
     <>
@@ -28,7 +29,7 @@ function Home() {
             <li>custom sections</li>
             <li>free download in PDF file</li>
           </div>
-          <button className="mt-5 text-left uppercase px-5 py-2 bg-slate-700 w-fit rounded-full text-white font-medium flex justify-center items-center gap-3 hover:gap-8 transition-all">
+          <button className="mt-5 text-left uppercase px-5 py-2 bg-green-700 w-fit rounded-full text-white font-medium flex justify-center items-center gap-3 hover:gap-8 transition-all">
             <Link to={"/templates"}>let's create</Link>
             <span>
               <FaArrowRight />

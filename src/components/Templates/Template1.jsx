@@ -36,9 +36,13 @@ function Template1(props) {
       <div className="wrap p-2 bg-white" id="wrapp">
         <div className="top flex pb-3">
           <div className="topl w-[75%]">
-            <h1 className="font-bold capitalize">{props.info.name}</h1>
-            <h3 className="tracking-tighter capitalize">{props.info.role}</h3>
-            <p className="capitalize">{props.info.summary}</p>
+            <h1 className="font-bold capitalize text-3xl m-1">
+              {props.info.name}
+            </h1>
+            <h3 className="tracking-tighter capitalize text-2xl m-1">
+              {props.info.role}
+            </h3>
+            <p className="capitalize text-lg m-1">{props.info.summary}</p>
           </div>
           <div className="topr w-[25%] text-right leading-5">
             <div className="flex justify-end gap-2">
@@ -130,7 +134,7 @@ function Template1(props) {
               } p-1 leading-6}`}
             >
               <h3 className="font-semibold capitalize">{index.Cname}</h3>
-              <h4 className="font-medium capitalize">
+              <h4 className="font-medium uppercase">
                 {index.Uname}
                 {(index.Uname && index.Syear) || index.Lyear != ""
                   ? " - "

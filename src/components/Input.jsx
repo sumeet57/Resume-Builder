@@ -57,32 +57,32 @@ const Input = () => {
     {
       type: "number",
       name: "phone",
-      max: 10,
+      max: 13,
     },
     {
       type: "email",
       name: "email",
-      max: 20,
+      max: 40,
     },
     {
       type: "text",
       name: "linkedin",
-      max: 20,
+      max: 100,
     },
     {
       type: "text",
       name: "github",
-      max: 20,
+      max: 100,
     },
     {
       type: "text",
       name: "instagram",
-      max: 20,
+      max: 100,
     },
     {
       type: "text",
       name: "facebook",
-      max: 20,
+      max: 100,
     },
   ];
 
@@ -566,7 +566,7 @@ const Input = () => {
                         onChange={(e) =>
                           handlechangeinpro(index, "proSummary", e.target.value)
                         }
-                        maxLength={100}
+                        maxLength={200}
                         placeholder={`Enter ${field.proSummary}`}
                         className="border-[1px] p-2 bg-black w-96 rounded-lg"
                       />
