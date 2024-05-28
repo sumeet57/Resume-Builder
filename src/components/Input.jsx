@@ -365,7 +365,7 @@ const Input = () => {
 
   return (
     <>
-      <div className="cont flex justify-center items-center bg-slate-800">
+      <div className="cont min-h-screen flex justify-center items-center bg-slate-800">
         <div className="wrap_for_inputandbutton flex flex-col w-[40%] overflow-x-auto">
           <div className="forinput">
             <div
