@@ -366,10 +366,10 @@ const Input = () => {
   return (
     <>
       <div className="cont flex justify-center items-center bg-slate-800">
-        <div className="wrap_for_inputandbutton flex flex-col w-[35%] overflow-x-auto">
+        <div className="wrap_for_inputandbutton flex flex-col w-[40%] overflow-x-auto">
           <div className="forinput">
             <div
-              className={`input1cont w-[100%] flex flex-col gap-5 p-5 flex-grow ${
+              className={`input1cont min-w-[100%] flex flex-col gap-5 p-5 flex-grow ${
                 currentinput === 1 ? "" : "hidden"
               }`}
             >
@@ -391,7 +391,7 @@ const Input = () => {
                         onChange={(e) => handleChange(e, field.name)}
                         maxLength={field.max}
                         placeholder={`Enter ${field.name}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="input border-[1px] p-2 bg-black rounded-lg"
                       />
                     </div>
                   )
@@ -432,7 +432,7 @@ const Input = () => {
                           }
                           maxLength={field.max}
                           placeholder={`Enter ${field.collegeName}`}
-                          className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                          className="border-[1px] p-2 bg-black rounded-lg"
                         />
                         {/* course name */}
                         <h4>{field.courseName} : </h4>
@@ -449,7 +449,7 @@ const Input = () => {
                           }
                           maxLength={field.max}
                           placeholder={`Enter ${field.courseName}`}
-                          className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                          className="border-[1px] p-2 bg-black rounded-lg"
                         />
                         {/* start year */}
                         <h4>{field.startYear} : </h4>
@@ -466,7 +466,7 @@ const Input = () => {
                           }
                           maxLength={field.max}
                           placeholder={`Enter ${field.startYear}`}
-                          className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                          className="border-[1px] p-2 bg-black rounded-lg"
                         />
                         {/* end year */}
                         <h4>{field.endYear} : </h4>
@@ -479,7 +479,7 @@ const Input = () => {
                           }
                           maxLength={field.max}
                           placeholder={`Enter ${field.endYear}`}
-                          className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                          className="border-[1px] p-2 bg-black rounded-lg"
                         />
                       </div>
                     </div>
@@ -555,7 +555,7 @@ const Input = () => {
                         }
                         maxLength={30}
                         placeholder={`Enter ${field.projectName}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* course name */}
                       <h4>{field.proSummary} : </h4>
@@ -568,7 +568,7 @@ const Input = () => {
                         }
                         maxLength={200}
                         placeholder={`Enter ${field.proSummary}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* start year */}
                       <h4>{field.duration} : </h4>
@@ -581,7 +581,7 @@ const Input = () => {
                         }
                         maxLength={3}
                         placeholder={`Enter ${field.duration}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* end year */}
                       <h4>{field.link} : </h4>
@@ -593,7 +593,7 @@ const Input = () => {
                           handlechangeinpro(index, "link", e.target.value)
                         }
                         placeholder={`Enter ${field.link}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                     </div>
                   </div>
@@ -635,7 +635,7 @@ const Input = () => {
                         }
                         maxLength={20}
                         placeholder={`Enter ${field.companyName}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* course name */}
                       <h4>{field.workSummary} : </h4>
@@ -652,7 +652,7 @@ const Input = () => {
                         }
                         maxLength={field.max}
                         placeholder={`Enter ${field.workSummary}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* start year */}
                       <h4>{field.duration} : </h4>
@@ -665,7 +665,7 @@ const Input = () => {
                         }
                         maxLength={3}
                         placeholder={`Enter ${field.duration}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* role */}
                       <h4>{field.role} : </h4>
@@ -678,7 +678,7 @@ const Input = () => {
                         }
                         maxLength={20}
                         placeholder={`Enter ${field.role}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                     </div>
                   </div>
@@ -717,7 +717,7 @@ const Input = () => {
                         }
                         maxLength={field.max}
                         placeholder={`Enter ${field.certName}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* course name */}
                       <h4>{field.provider} : </h4>
@@ -730,7 +730,7 @@ const Input = () => {
                         }
                         maxLength={field.max}
                         placeholder={`Enter ${field.provider}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                       {/* start year */}
                       <h4>{field.duration} : </h4>
@@ -743,7 +743,7 @@ const Input = () => {
                         }
                         maxLength={3}
                         placeholder={`Enter ${field.duration}`}
-                        className="border-[1px] p-2 bg-black w-96 rounded-lg"
+                        className="border-[1px] p-2 bg-black rounded-lg"
                       />
                     </div>
                   </div>
@@ -772,7 +772,7 @@ const Input = () => {
             </button>
           </div>
         </div>
-        <div className="wrap_for_template w-[60%] h-[90.9999vh] scale-90">
+        <div className="wrap_for_template w-[60%] scale-90">
           <div className="w-full max-h-[90%] overflow-y-scroll">
             {temp[template]}
           </div>

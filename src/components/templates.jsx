@@ -18,56 +18,43 @@ const Templates = () => {
 
   if (location.pathname === "/templates") {
     return (
-      <div className="tempmain bg-slate-800 h-[90.999vh]">
-        <h2 className="flex justify-center items-center font-bold text-3xl text-white uppercase p-4 mb-4">
+      <div className="tempmain bg-slate-800 w-full min-h-screen">
+        <h2 className="font-bold text-[4vw] text-center text-white uppercase p-4 mb-4">
           Select a template:
         </h2>
-        <div className="tempcont flex gap-5 justify-center items-center flex-wrap">
-          <div className="w-[20%] min-h-[50vh] bg-black relative">
-            <button
-              className="group focus:outline-none"
-              onClick={() => handleTemplateSelect(1)}
-            >
-              <img src={resu1} alt="" />
-              <div
-                className={`selectclass absolute w-full h-full top-0 bg-black opacity-50 flex justify-center items-center visible ${
-                  selectedTemplate === 1 ? "visible" : "hidden"
-                }`}
-              >
-                <h2 className="extratempfont text-white uppercase font-semibold text-2xl">
-                  selected
-                </h2>
-              </div>
-            </button>
+        <div className="tempcont flex gap-5 justify-center items-center p-10">
+          <div className="box w-[30vw]" onClick={() => setSelectedTemplate(1)}>
+            <img
+              src={resu1}
+              alt=""
+              className={`w-full h-full object-contain
+              ${
+                selectedTemplate === 1
+                  ? "scale-105 border-8 border-green-500"
+                  : "scale-90"
+              }
+             duration-1000`}
+            />
           </div>
-          <div className="w-[20%] min-h-[50vh] bg-black relative">
-            <button onClick={() => handleTemplateSelect(2)}>
-              <img src={resu2} alt="" />
-              <div
-                className={`selectclass absolute w-full h-full top-0 bg-black opacity-50 flex justify-center items-center visible ${
-                  selectedTemplate === 2 ? "visible" : "hidden"
-                }`}
-              >
-                <h2 className="extratempfont text-white uppercase font-semibold text-2xl">
-                  selected
-                </h2>
-              </div>
-            </button>
+          <div className="box w-[30vw]" onClick={() => setSelectedTemplate(2)}>
+            <img
+              src={resu2}
+              alt=""
+              className={`w-full h-full object-contain
+              ${
+                selectedTemplate === 2
+                  ? "scale-105 border-8 border-green-500"
+                  : "scale-90"
+              }
+             duration-1000`}
+            />
           </div>
-          <div className="w-[20%] min-h-[50vh] bg-black relative">
-            <button /*onClick={() => handleTemplateSelect(3)}*/>
-              <img
-                src="https://marketplace.canva.com/EAFjRZP7Qy4/1/0/1131w/canva-minimalist-modern-professional-cv-resume-xkDELtpQH94.jpg"
-                alt=""
-              />
-              <div
-                className={`selectclass absolute w-full h-full top-0 bg-black opacity-50 flex justify-center items-center visible`}
-              >
-                <h2 className="extratempfont text-white uppercase font-semibold text-2xl">
-                  coming soon
-                </h2>
-              </div>
-            </button>
+          <div className="box w-[30vw]">
+            <img
+              src="https://marketplace.canva.com/EAFjRZP7Qy4/1/0/1131w/canva-minimalist-modern-professional-cv-resume-xkDELtpQH94.jpg"
+              alt=""
+              className={`w-full h-full object-contain blur-sm`}
+            />
           </div>
         </div>
         {selectedTemplate && (

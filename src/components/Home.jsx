@@ -6,7 +6,7 @@ import "../components/responsive.css";
 function Home() {
   return (
     <>
-      <div className="page1 w-full h-[90.99999vh] flex justify-center items-center bg-slate-800 text-white">
+      <div className="page1 w-full min-h-screen flex justify-center items-center bg-slate-800 text-white">
         <div className="cont1 w-1/2 h-full">
           <div className="imgcont w-full h-full relative overflow-hidden">
             <img
